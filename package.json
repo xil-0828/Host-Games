@@ -1,11 +1,7 @@
 {
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "preview": "vite preview",
-    "type-check": "tsc -b"
-  },
-  "dependencies": {
-    "vite": "^7.2.2"
+    "build": "npm run build:novel && npm run copy:mesu",
+    "build:novel": "cd novel-rpg-main && npm run build",
+    "copy:mesu": "mkdir -p public/mesugaki-wakarase-tap && cp -r mesugaki-wakarase-tap/* public/mesugaki-wakarase-tap/"
   }
 }
