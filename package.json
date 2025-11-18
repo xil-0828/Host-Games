@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "npm run build:novel && npm run copy:html",
+    "build:novel": "cd novel-rpg-main && npm run build",
+    "copy:html": "cp -r mesugaki-wakarase-tap public/mesugaki-wakarase-tap"
+  }
+}
