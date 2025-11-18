@@ -4,5 +4,8 @@
     "dev": "vite",
     "preview": "vite preview",
     "type-check": "tsc -b"
+  },
+  "dependencies": {
+    "vite": "^7.2.2"
   }
 }
