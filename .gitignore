@@ -1,5 +1,5 @@
 # macOS file
-.DS_Store
+**/.DS_Store
 
 # vscode extension
 .history
