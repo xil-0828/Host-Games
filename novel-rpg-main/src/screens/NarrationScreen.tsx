@@ -8,7 +8,7 @@ import ChoiceMenu from "./ChoiceMenu";
 
 export default function NarrationScreen() {
   const {
-    data: { text, animatedText, character } = {},
+    data: { text,  character } = {},
   } = useQueryDialogue();
   const { data: canGoNext = false } = useQueryCanGoNext();
   const { data: canGoBack = false } = useQueryCanGoBack();
@@ -24,7 +24,7 @@ export default function NarrationScreen() {
   }, []);
 
   // PixiVNがanimatedTextを提供しない場合、textを代わりにアニメーション対象にする
-  const displayAnimatedText = animatedText ?? text ?? "";
+  const displayAnimatedText =  text;
 
   return (
     <div
@@ -40,7 +40,7 @@ export default function NarrationScreen() {
         <ChoiceMenu />
       </div>
 
-      {(text || animatedText) && (
+      {(text) && (
         <div
           style={{
             flex: "0 0 auto",

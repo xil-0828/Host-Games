@@ -39,7 +39,7 @@ const DIALOGUE_USE_QUEY_KEY = "dialogue_use_quey_key";
 export function useQueryDialogue() {
   return useQuery({
     queryKey: [INTERFACE_DATA_USE_QUEY_KEY, DIALOGUE_USE_QUEY_KEY],
-    queryFn: async ({ queryKey }) => {
+    queryFn: async () => {
       let dialogue = narration.dialogue;
       let text = dialogue?.text;
       if (Array.isArray(text)) {
